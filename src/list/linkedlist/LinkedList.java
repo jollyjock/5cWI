@@ -7,13 +7,13 @@ public class LinkedList implements HTLList {
 
     @Override
     public void add(int value) {
-        Node n = new Node (value); //neuer datensatz wird erstellt
-        if (root==null){ //root wird als der nullte knoten festgelegt
-            root = n; //root wird zu n umgetauft
+        Node n=new Node (value); //neuer knoten wird erstellt
+        if (root==null){ //wenn root keinen wert hat
+            root=n; //dann wird root zu n dem ersten knoten
         }else{
-            Node actual = root;
+            Node actual=root;
             while(n.getNext()!=null){ //solange es nicht null ist nimmt er den nachbarknoten
-                actual = actual.getNext();
+                actual=actual.getNext();
             }
             actual.setNext(n);
         }
@@ -22,9 +22,9 @@ public class LinkedList implements HTLList {
 
     @Override
     public int get(int index) {
-        Node actual = root;  // node mit dem namen actual wird zu ersten knoten der liste also 0
-        for(int i = 0; i < index; i++) { // i ist am anfang 0 -> solange i nicht an der angebenen stelle ist, vergrößert sich sich i um eins
-            actual = actual.getNext(); // actual nimmt immer den nachbar knoten
+        Node actual=root;  //neuer knoten wird erstellt
+        for(int i=0; i < index; i++) { //i ist am anfang 0 -> solange i nicht an der angebenen stelle ist, vergrößert sich sich i um eins
+            actual=actual.getNext(); //actual nimmt immer den nachbarknoten
         }
 
         return actual.getValue();
@@ -32,5 +32,14 @@ public class LinkedList implements HTLList {
 
     @Override
     public void remove(int index) {
+        Node actual=root; //neuer knoten wird erstellt
+        if (index==0){ //wenn der eingegebene wert 0 ist
+            root=root.getNext(); // dann wird root der nachbarknoten
+            return;
+        }
+        for (int i=0; i<index-1;i++){ //i ist am anfang 0 -> solange i nicht an der angebenen stelle ist, vergrößert sich sich i um eins
+            actual=actual.getNext(); //actual nimmt immer den nachbarknoten
+        }
+        actual.setNext(actual.getNext().getNext());// rerooting auf den übernächsten knoten z.b:. 1->2->3, 2 wird entfernt, 1->3
     }
 }
