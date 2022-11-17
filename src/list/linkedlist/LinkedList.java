@@ -12,7 +12,7 @@ public class LinkedList implements HTLList {
             root=n; //dann wird root zu n dem ersten knoten
         }else{
             Node actual=root;
-            while(n.getNext()!=null){ //solange es nicht null ist nimmt er den nachbarknoten
+            while(actual.getNext()!=null){ //solange es nicht null ist nimmt er den nachbarknoten
                 actual=actual.getNext();
             }
             actual.setNext(n);
@@ -23,7 +23,7 @@ public class LinkedList implements HTLList {
     @Override
     public int get(int index) {
         Node actual=root;  //neuer knoten wird erstellt
-        for(int i=0; i < index; i++) { //i ist am anfang 0 -> solange i nicht an der angebenen stelle ist, vergrößert sich sich i um eins
+        for(int i=0; i < index-1; i++) { //i ist am anfang 0 -> solange i nicht an der angebenen stelle ist, vergrößert sich sich i um eins
             actual=actual.getNext(); //actual nimmt immer den nachbarknoten
         }
 
