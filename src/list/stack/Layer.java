@@ -1,10 +1,10 @@
 package list.stack;
 
-public class Node {
+public class Layer {
     private int value;
-    private Node next;
+    private Layer next;
 
-    public Node(int value) {
+    public Layer(int value) {
         this.value = value;
     }
 
@@ -16,11 +16,11 @@ public class Node {
         this.value = value;
     }
 
-    public Node getNext() {
+    public Layer getAbove() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Layer next) {
         this.next = next;
     }
 }
