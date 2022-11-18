@@ -1,32 +1,28 @@
 package list.stack;
 
 import list.HTLStack;
-import list.linkedlist.Node;
 
 public class Stack implements HTLStack {
     private Layer top;
 
     @Override
     public void push(int value) {
-        Layer l = new Layer (value);
-        if (top==null){
-            top=l;
-        }else{
-            Layer actual=top;
-            while(actual.getAbove()!=null){
-                actual=actual.getAbove();
-            }
-            actual.setNext(l);
+        Layer l = new Layer(value);
+        if (top != null) {
+            l.setAbove(top);
         }
+        top = l;
 
     }
 
-
     @Override
-    public void peak(int index) {
+    public int peek() {
+        return top.getValue();
     }
 
     @Override
-    public void pop(int index) {
+    public void pop() {
+        top = top.getAbove();
     }
 }
+
