@@ -1,6 +1,6 @@
-package lists.linkedlist;
+package AlgoDat.lists.linkedlist;
 
-import lists.HTLList;
+import AlgoDat.lists.HTLList;
 
 public class LinkedList implements HTLList {
     private Node root;

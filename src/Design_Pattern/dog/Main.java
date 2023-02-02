@@ -1,4 +1,4 @@
-package dog;
+package Design_Pattern.dog;
 
 public class Main {
     public static void main(String[] args) {

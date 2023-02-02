@@ -1,6 +1,8 @@
-package dog;
+package Design_Pattern.dog;
 
-public class Poodle extends Abstract_Dog{
+import Design_Pattern.dog.Abstract_Dog;
+
+public class Poodle extends Abstract_Dog {
     public Poodle(String name) {
         super(name);
     }

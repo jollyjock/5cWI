@@ -1,4 +1,4 @@
-package lists.linkedlist;
+package AlgoDat.lists.linkedlist;
 
 public class Main {
     public static void main(String[] args) {

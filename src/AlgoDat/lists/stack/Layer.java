@@ -1,4 +1,4 @@
-package lists.stack;
+package AlgoDat.lists.stack;
 
 public class Layer {
     private int value;

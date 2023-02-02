@@ -1,4 +1,4 @@
-package dog;
+package Design_Pattern.dog;
 
 public interface Dog {
     public void run();

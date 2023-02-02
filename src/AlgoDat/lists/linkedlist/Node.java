@@ -1,4 +1,4 @@
-package lists.linkedlist;
+package AlgoDat.lists.linkedlist;
 
 public class Node {
     private int value;

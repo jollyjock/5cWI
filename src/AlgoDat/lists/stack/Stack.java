@@ -1,6 +1,6 @@
-package lists.stack;
+package AlgoDat.lists.stack;
 
-import lists.HTLStack;
+import AlgoDat.lists.HTLStack;
 
 public class Stack implements HTLStack {
     private Layer top;

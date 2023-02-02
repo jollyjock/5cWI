@@ -1,4 +1,4 @@
-package lists;
+package AlgoDat.lists;
 
 public interface HTLStack {
     public void push(int value);

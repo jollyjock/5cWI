@@ -1,4 +1,4 @@
-package lists;
+package AlgoDat.lists;
 
 public interface HTLQueue {
     public void enqueue(int value);

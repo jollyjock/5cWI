@@ -1,6 +1,6 @@
-package dog;
+package Design_Pattern.dog;
 
-public abstract class Abstract_Dog implements Dog{
+public abstract class Abstract_Dog implements Dog {
     private String name;
 
     public Abstract_Dog(String name) {

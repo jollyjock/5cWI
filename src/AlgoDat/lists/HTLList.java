@@ -1,4 +1,4 @@
-package lists;
+package AlgoDat.lists;
 
 public interface HTLList {
     public void add (int value);

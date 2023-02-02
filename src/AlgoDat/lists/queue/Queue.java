@@ -1,6 +1,6 @@
-package lists.queue;
+package AlgoDat.lists.queue;
 
-import lists.HTLQueue;
+import AlgoDat.lists.HTLQueue;
 
 public class Queue implements HTLQueue {
     private Block First;

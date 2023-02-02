@@ -1,4 +1,4 @@
-package lists.queue;
+package AlgoDat.lists.queue;
 
 public class Main {
     public static void main(String[] args){

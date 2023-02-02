@@ -1,4 +1,6 @@
-package dog;
+package Design_Pattern.dog;
+
+import Design_Pattern.dog.Abstract_Dog;
 
 public class Boxer extends Abstract_Dog {
     public Boxer(String name) {

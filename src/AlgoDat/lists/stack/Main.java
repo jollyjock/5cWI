@@ -1,4 +1,4 @@
-package lists.stack;
+package AlgoDat.lists.stack;
 
 public class Main {
     public static void main(String[] args){
