@@ -1,6 +1,6 @@
-package list.stack;
+package lists.stack;
 
-import list.HTLStack;
+import lists.HTLStack;
 
 public class Stack implements HTLStack {
     private Layer top;

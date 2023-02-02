@@ -1,5 +1,4 @@
-package list.stack;
-import list.HTLStack;
+package lists.stack;
 
 public class Main {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package list;
+package lists;
 
 public interface HTLStack {
     public void push(int value);

@@ -1,6 +1,6 @@
-package list;
+package lists;
 
 public interface HTLQueue {
     public void enqueue(int value);
-    public void dequeue();
+    public int dequeue();
 }

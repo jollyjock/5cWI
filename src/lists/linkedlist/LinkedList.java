@@ -1,6 +1,6 @@
-package list.linkedlist;
+package lists.linkedlist;
 
-import list.HTLList;
+import lists.HTLList;
 
 public class LinkedList implements HTLList {
     private Node root;

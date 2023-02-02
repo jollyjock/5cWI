@@ -1,4 +1,4 @@
-package list;
+package lists;
 
 public interface HTLList {
     public void add (int value);

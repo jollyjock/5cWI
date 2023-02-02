@@ -1,10 +1,10 @@
-package list.stack;
+package lists.queue;
 
-public class Layer {
+public class Block {
     private int value;
-    private Layer next;
+    private Block next;
 
-    public Layer(int value) {
+    public Block(int value) {
         this.value = value;
     }
 
@@ -16,11 +16,11 @@ public class Layer {
         this.value = value;
     }
 
-    public Layer getAbove() {
+    public Block getNext() {
         return next;
     }
 
-    public void setAbove(Layer next) {
+    public void setNext(Block next) {
         this.next = next;
     }
 }
